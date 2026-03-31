@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "crates/audiomerge-core",
+    "crates/audiomerge-cli",
+]
+resolver = "2"

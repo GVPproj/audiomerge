@@ -1,0 +1,25 @@
+[package]
+name = "audiomerge-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core library for audiomerge — loudness-normalized audio merging with crossfades"
+
+[features]
+test-helpers = ["dep:tempfile"]
+
+[dependencies]
+ebur128 = "0.1"
+hound = "3.5"
+flacenc = "0.4"
+rubato = "0.16"
+rayon = "1.10"
+symphonia = { version = "0.5", features = ["mp3", "flac", "pcm", "vorbis", "ogg"] }
+thiserror = "2"
+tempfile = { version = "3", optional = true }
+
+[dev-dependencies]
+audiomerge-core = { path = ".", features = ["test-helpers"] }
+proptest = "1"
+tempfile = "3"
+approx = "0.5"
+hound = "3.5"

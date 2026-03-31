@@ -1,0 +1,13 @@
+[package]
+name = "audiomerge-cli"
+version = "0.1.0"
+edition = "2021"
+description = "CLI for audiomerge — loudness-normalized audio merging with crossfades"
+
+[[bin]]
+name = "audiomerge"
+path = "src/main.rs"
+
+[dependencies]
+audiomerge-core = { path = "../audiomerge-core" }
+clap = { version = "4", features = ["derive"] }
