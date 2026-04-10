@@ -2,7 +2,7 @@
 
 A CLI tool that takes 2-3 audio files, normalizes their loudness (EBU R128), applies a true-peak limiter, and crossfades them into a single output file.
 
-Built entirely in Rust with zero external runtime dependencies — no ffmpeg required. Ships as a single static binary.
+Ships as a single static binary with zero external runtime dependencies.
 
 ## Install
 
